@@ -55,5 +55,5 @@ Everything you need for your Soan Papdi, all in one place.
   ### Lattice iCE40UP5K Datasheets
 
   {{< cards >}}
-    {{< card title="iCE40UP5K Datasheet (PDF) ↓" link="../downloads/icestudio/ice40/iCE40UP5K.pdf" >}}
+    {{< card title="iCE40UP5K Datasheet (PDF) ↓" link="../downloads/iCE40-UltraPlus-Data-Sheet.pdf" >}}
   {{< /cards >}}
