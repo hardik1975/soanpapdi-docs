@@ -53,10 +53,10 @@ params:
     displayTitle: true
     displayLogo: true
     logo:
-      path: images/logo.svg
+      path: images/soanpapdi.svg
       # dark: images/logo-dark.svg
       # dark: images/soanpapdi-log.svg
-      dark: images/soanpapdi-v2.svg
+      dark: images/soanpapdi.svg
       link: /
       width: 120
       height: 10
