@@ -1,0 +1,50 @@
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+}
+
+/* Circle images for team members */
+/* .member img {
+    width: 150px !important;
+    height: 150px !important;
+    max-width: 150px !important;
+
+    border-radius: 50%;
+    object-fit: cover;
+} */
+
+.member img {
+    width: 180px !important;
+    height: 180px !important;
+    max-width: 180px !important;
+
+    border-radius: 8px; /* or 0 */
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.team-member h3 {
+    margin: 12px 0 4px;
+}
+
+.team-member p {
+    margin: 4px 0;
+}
+
+.member {
+    text-align: left;
+}
+
+.member img {
+    display: block;
+    margin: 0;
+}
+
+
+/* Spec Card Styles */
