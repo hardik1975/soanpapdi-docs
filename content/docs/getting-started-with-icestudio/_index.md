@@ -26,7 +26,7 @@ Discover iCE Studio, a visual FPGA design tool that lets you build digital circu
 Install iCE Studio and get your development environment ready.
 
 {{< cards >}}
-  {{< card link="installation" title="Installing iCE Studio" icon="download" >}}
+  {{< card link="installing-ice-studio" title="Installing iCE Studio" icon="download" >}}
 {{< /cards >}}
 
 ### Turn on an LED
@@ -34,7 +34,7 @@ Install iCE Studio and get your development environment ready.
 Create your first FPGA project and turn on an onboard LED on the Soan Papdi board.
 
 {{< cards >}}
-  {{< card link="../examples/01-led" title="Turn on an LED" icon="light-bulb" >}}
+  {{< card link="../icetudio-examples/01-led" title="Turn on an LED" icon="light-bulb" >}}
 {{< /cards >}}
 
 {{% /steps %}}

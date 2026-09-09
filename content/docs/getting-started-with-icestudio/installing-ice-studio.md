@@ -89,7 +89,7 @@ iCE Studio and the FPGA toolchain are now installed.
 Create your first FPGA project and turn on an onboard LED on the Soan Papdi board.
 
 {{< cards >}}
-  {{< card link="../../examples/01-led" title="Turn on an LED" icon="light-bulb" >}}
+  {{< card link="../../icetudio-examples/01-led" title="Turn on an LED" icon="light-bulb" >}}
 {{< /cards >}}
 
 {{% /steps %}}

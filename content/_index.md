@@ -18,7 +18,7 @@ toc: false
 </div> -->
 
 <div class="cta-row" style="display: flex; gap: 16px; justify-content: center; margin-top: 1.5rem;">
-  <a href="https://www.crowdsupply.com/ashoktinkeringlabs/soan-papdi" class="cta-btn secondary" style="display: inline-flex; align-items: center; gap: 8px; padding: 10px 24px; border-radius: 8px; text-decoration: none; font-weight: 600; background: var(--hextra-colors-background-secondary, #e5e7eb); color: var(--hextra-colors-text, #374151);">
+  <a href="/docs/hardware-overview" class="cta-btn secondary" style="display: inline-flex; align-items: center; gap: 8px; padding: 10px 24px; border-radius: 8px; text-decoration: none; font-weight: 600; background: var(--hextra-colors-background-secondary, #e5e7eb); color: var(--hextra-colors-text, #374151);">
     {{< icon "menu" >}} Details
   </a>
   <a href="https://www.crowdsupply.com/ashoktinkeringlabs/soan-papdi" class="cta-btn primary" style="display: inline-flex; align-items: center; gap: 8px; padding: 10px 24px; border-radius: 8px; text-decoration: none; font-weight: 600; background: #3b82f6; color: white;">
@@ -76,10 +76,11 @@ toc: false
 </div>
 
 {{< callout emoji="💡" >}}
-  **The design is intentional:** Just the FPGA, Flash memory, a USB-C port for power and loading circuits, and basic Input/Output to keep you focused on learning.
+  **The design is intentional:** \
+  Just the FPGA, Flash memory, a USB-C port for power and loading circuits, and basic Input/Output to keep you focused on learning.
 {{< /callout >}}
 
----
+<br>
 
 ## New to FPGAs?
 
@@ -94,6 +95,8 @@ Most FPGA boards are designed for experienced engineers. You spend hours hunting
   {{< youtube p9qrO0cj7SM >}}
 </div>
 
+<br>
+
 ### No Complex HDL Needed
 
 No complicated installation flow. No lame driver installation. Download the IDE, double-click, and get started! Program it using the open-source **iCEStudio IDE** or use RAW HDL.
@@ -104,7 +107,7 @@ No complicated installation flow. No lame driver installation. Download the IDE,
   {{< card link="docs/getting-started" title="Getting Started Guide" icon="arrow-right" >}}
 {{< /cards >}}
 
----
+<br>
 
 ## Why this design?
 
@@ -136,7 +139,7 @@ On the right side of the board, 10 GPIO pins let you go beyond the onboard perip
 ![GPIO Pins](../docs/images/landing-page/soan-papdi-gpio-marked.png)
 *![IR sensor example](../docs/images/IR-sensor-example.gif "IR sensor example on GPIO pin")*
 
----
+<br>
 
 ## Specification
 
@@ -170,7 +173,7 @@ On the right side of the board, 10 GPIO pins let you go beyond the onboard perip
   {{< card title="User Interface" subtitle="**12 LEDs • 8 Switches • 10 GPIO**" >}} 
 {{< /cards >}}
 
----
+<br>
 
 ## Learning Resources
 
@@ -190,7 +193,7 @@ Start simple — build basic gates like AND, OR, or a decoder. Once you're comfo
 
 Looking for more inspiration? Browse the full **[iCEstudio Example Collection](https://github.com/FPGAwars/icestudio/wiki#organization-of-the-collection)**.
 
----
+<br>
 
 ## The Team
 

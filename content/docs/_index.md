@@ -55,6 +55,6 @@ Ready to work closer to the hardware? Learn Verilog and build your own FPGA desi
 Everything you need to set up your tools, program your board, and troubleshoot common issues.
 
 {{< cards >}}
-  {{< card link="downloads" title="Downloads" icon="download">}}
+  {{< card link="/downloads" title="Downloads" icon="download">}}
   {{< card link="troubleshoot" title="Troubleshooting" icon="adjustments">}}
 {{< /cards >}}
