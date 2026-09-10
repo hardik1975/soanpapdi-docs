@@ -83,7 +83,7 @@ The **S0, S1, and S2** white LEDs will start blinking in a sequence. This means 
     playsinline
     width="100%"
     style="border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);">
-    <source src="/videos/soan-papdi-programming-video.mp4" type="video/mp4">
+    <source src="../../videos/soan-papdi-programming-video.mp4" type="video/mp4">
   </video>
 
   <p style="margin-top: 10px; font-size: 0.85rem; opacity: 0.65;">
