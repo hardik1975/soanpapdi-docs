@@ -32,7 +32,7 @@ toc: false
 
 <div style="display:flex; justify-content:center; margin: 4rem 0;">
   <model-viewer
-    src="/models/soan-papdi.glb"
+    src="./models/soan-papdi.glb"
     camera-controls
     auto-rotate
     rotation-per-second="6deg"
@@ -54,7 +54,7 @@ toc: false
 
 <div style="display:flex; justify-content:center; margin: 3rem 0;">
   <model-viewer
-    src="/models/soan-papdi.glb"
+    src="./models/soan-papdi.glb"
     camera-controls
     camera-orbit="0deg 75deg 80%"
     shadow-intensity="1"

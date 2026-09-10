@@ -15,7 +15,7 @@ Next: /docs/examples/explore-more-examples/
     playsinline
     width="100%"
     style="border-radius: 12px; overflow: hidden;">
-    <source src="/videos/blink-led.mov" type="video/mp4">
+    <source src="../../../videos/blink-led.mov" type="video/mp4">
   </video>
 
 In this project, we'll build the classic "Hello, World!" of hardware: a blinking LED using Icestudio's blocks.
@@ -100,7 +100,7 @@ In this project, we'll build the classic "Hello, World!" of hardware: a blinking
     playsinline
     width="100%"
     style="border-radius: 12px; overflow: hidden;">
-    <source src="/videos/soan-papdi-programming video.mp4" type="video/mp4">
+    <source src="../../../videos/soan-papdi-programming video.mp4" type="video/mp4">
   </video>
 
   <p style="margin-top: 10px; font-size: 0.85rem; opacity: 0.65;">
@@ -132,7 +132,7 @@ In this project, we'll build the classic "Hello, World!" of hardware: a blinking
     playsinline
     width="100%"
     style="border-radius: 12px; overflow: hidden;">
-    <source src="/videos/blink-led.mov" type="video/mp4">
+    <source src="../../../videos/blink-led.mov" type="video/mp4">
   </video>
 
 

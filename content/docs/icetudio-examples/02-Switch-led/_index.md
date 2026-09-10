@@ -18,7 +18,7 @@ Next: /docs/examples/03-blink-led/
     playsinline
     width="100%"
     style="border-radius: 12px; overflow: hidden;">
-    <source src="/videos/examples/led-switch-example.mp4" type="video/mp4">
+    <source src="../../../videos/examples/led-switch-example.mp4" type="video/mp4">
   </video>
 
   <p style="margin-top: 10px; font-size: 0.85rem; opacity: 0.65;">
@@ -122,7 +122,7 @@ In this project, you'll turn on an onboard LED by using switch on the Soan Papdi
     playsinline
     width="100%"
     style="border-radius: 12px; overflow: hidden;">
-    <source src="/videos/soan-papdi-programming video.mp4" type="video/mp4">
+    <source src="../../../videos/soan-papdi-programming video.mp4" type="video/mp4">
   </video>
 
   <p style="margin-top: 10px; font-size: 0.85rem; opacity: 0.65;">
@@ -153,7 +153,7 @@ In this project, you'll turn on an onboard LED by using switch on the Soan Papdi
     playsinline
     width="100%"
     style="border-radius: 12px; overflow: hidden;">
-    <source src="/videos/examples/led-switch-example.mp4" type="video/mp4">
+    <source src="../../../videos/examples/led-switch-example.mp4" type="video/mp4">
   </video>
 
   <p style="margin-top: 10px; font-size: 0.85rem; opacity: 0.65;">

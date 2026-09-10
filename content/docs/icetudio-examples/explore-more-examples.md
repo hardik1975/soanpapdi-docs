@@ -14,7 +14,7 @@ iCE Studio comes with several built-in examples that help you learn FPGA concept
   playsinline
   width="100%"
   style="border-radius: 12px; overflow: hidden;">
-  <source src="/videos/icestudio-builtin-examples.mp4" type="video/mp4">
+  <source src="../../../videos/icestudio-builtin-examples.mp4" type="video/mp4">
 </video>
 
 <br>
@@ -27,7 +27,7 @@ This example shows how an FPGA can count events and display the result using LED
 
 <br>
 <video controls autoplay muted loop playsinline width="100%">
-  <source src="/videos/8-bit-counter.mp4" type="video/mp4">
+  <source src="../../../videos/8-bit-counter.mp4" type="video/mp4">
 </video>
 
 <br>
@@ -38,7 +38,7 @@ In this example, you'll connect an IR sensor to Soan Papdi and use the FPGA to d
 
 <br>
 <video controls autoplay muted loop playsinline width="100%">
-  <source src="/videos/IR-sensor-example.mp4" type="video/mp4">
+  <source src="../../../videos/IR-sensor-example.mp4" type="video/mp4">
 </video>
 
 <br>
