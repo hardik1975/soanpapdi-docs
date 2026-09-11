@@ -104,7 +104,7 @@ No complicated installation flow. No lame driver installation. Download the IDE,
 ![Alternate Led Blink](../docs/images/landing-page/soan-papdi-alternate-led-blink.gif "Alternate LEDs blink example in iCE Studio.")
 
 {{< cards >}}
-  {{< card link="docs/getting-started" title="Getting Started Guide" icon="arrow-right" >}}
+  {{< card link="docs/getting-started-with-icestudio/" title="Getting Started Guide" icon="arrow-right" >}}
 {{< /cards >}}
 
 <br>

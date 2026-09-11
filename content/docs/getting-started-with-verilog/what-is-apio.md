@@ -38,9 +38,8 @@ While you type simple commands, Apio quietly manages a powerful suite of open-so
 ## Why use Apio?
 
 {{< cards >}}
-  {{< card title="All-in-One" subtitle="Verify, build, simulate, and upload from one place." >}}
+  {{< card title="All-in-One" subtitle="Verify, build, simulate & upload from one place." >}}
   {{< card title="Simplicity" subtitle="No messy installations or paths to configure." >}}
-  {{< card title="Cross Platform" subtitle="Runs on Linux, Windows, and macOS." >}}
+  {{< card title="Cross Platform" subtitle="Runs on Linux, Windows & macOS." >}}
   {{< card title="Open Source" subtitle="Free, community-driven." >}}
 {{< /cards >}}
-
