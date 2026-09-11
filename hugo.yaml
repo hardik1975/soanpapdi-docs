@@ -18,18 +18,22 @@ markup:
 
 menu:
   main:
+    - name: Crowd Supply
+      url: "https://www.crowdsupply.com/ashoktinkeringlabs/soan-papdi"
+      weight: 1
     - name: Docs
       pageRef: /docs
       weight: 1
     - name: Downloads
       pageRef: /downloads
       weight: 2
-    - name: About
-      pageRef: /about
+    - name: About Us ↗
+      url: "https://www.ashoktinkeringlabs.com/about"
+      # pageRef: /about
       weight: 3
-    - name: Contact ↗
-      url: "https://www.ashoktinkeringlabs.com/contact"
-      weight: 4
+    # - name: Contact ↗
+    #   url: "https://www.ashoktinkeringlabs.com/contact"
+    #   weight: 4
     - name: Search
       weight: 5
       params:
