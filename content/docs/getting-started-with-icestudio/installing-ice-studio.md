@@ -2,6 +2,7 @@
 title: Installing iCE Studio
 type: docs
 weight: 2
+next: /docs/icetudio-examples/01-LED/
 ---
 
 In this section, you'll install iCE Studio and set up the FPGA toolchain required to program your Soan Papdi board.
@@ -28,18 +29,17 @@ Download the iCE Studio for your operating system:
 
 <!-- Stable Release (Windows, Linux & macOS):  -->
 
-<!-- {{< cards cols="2" >}}
-  {{< card title="Linux (x64) ↓" link="../icestudio/icestudio_v0.12.3_linux64.zip" >}}
-  {{< card title="Windows ↓" link="../icestudio/icestudio_v0.12.3_win64.exe" >}}
-  {{< card title="macOS (Apple Silicon) ↓" link="../icestudio/icestudio_v0.12.3_MacOS_AppleSilicon.dmg" >}}
-  {{< card title="macOS (Intel) ↓" link="../icestudio/icestudio_v0.12.3_MacOS_Intel.dmg" >}}
-{{< /cards >}} -->
+{{< cards cols="1" >}}
+  {{< card title="Linux (x64) ↓" link="https://github.com/FPGAwars/icestudio/releases/download/v1.0.0.PRw-20260821/icestudio-1.0.0.PRw-20260821-linux64.AppImage" >}}
+  {{< card title="macOS ↓" link="https://github.com/FPGAwars/icestudio/releases/download/v1.0.0.PRw-20260821/icestudio-1.0.0.PRw-20260821-osxarm64.dmg" >}}
+  {{< card title="Windows ↓" link="https://github.com/FPGAwars/icestudio/releases/download/v1.0.0.PRw-20260821/icestudio-1.0.0.PRw-20260821-win64.exe" >}}
+{{< /cards >}}
 
 <!-- Latest: -->
 
-{{< cards cols="2" >}}
+<!-- {{< cards cols="2" >}}
   {{< card title="Latest Release" link="https://github.com/FPGAwars/icestudio/releases#release-v1.0.0.PRw-20260821" >}}
-{{< /cards >}}
+{{< /cards >}} -->
 
 <!-- Soan Papdi support has already been contributed to iCE Studio and will be available in a future official release. Until then, please use the Soan Papdi build linked above, which includes all the required support out of the box. -->
 

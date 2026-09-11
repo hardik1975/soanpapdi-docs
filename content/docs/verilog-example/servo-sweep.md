@@ -2,6 +2,7 @@
 title: 1. Servo Sweep
 type: docs
 weight: 1
+next: /docs/troubleshoot/
 ---
 
 ![Servo sweep](../../images/verilog-workflow/servo_sweep_using_soan_papdi.gif)

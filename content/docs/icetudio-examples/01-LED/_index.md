@@ -4,7 +4,7 @@ type: docs
 sidebar:
   open: false
 weight: 1
-Next: /docs/examples/02-Switch-led/
+next: /docs/icetudio-examples/02-Switch-led/
 ---
 
 ![upload-bitstream](images/Led-on-example.png)

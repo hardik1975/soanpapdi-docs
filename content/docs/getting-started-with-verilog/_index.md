@@ -4,6 +4,7 @@ type: docs
 sidebar:
   open: true
 weight: 4
+next: docs/getting-started-with-verilog/what-is-apio/
 ---
 
 In this section, we'll walk you through the complete Verilog workflow for the Soan Papdi using the **Apio CLI**.

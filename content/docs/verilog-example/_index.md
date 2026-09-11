@@ -4,6 +4,7 @@ type: docs
 weight: 5
 sidebar:
   open: true
+next: docs/verilog-example/servo-sweep/
 ---
 
 Ready to dive deeper into hardware design? This section is dedicated to hands-on Verilog projects that you can build and run directly on your Soan Papdi.

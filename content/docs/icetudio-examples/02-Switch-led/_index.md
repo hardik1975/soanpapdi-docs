@@ -4,7 +4,7 @@ type: docs
 sidebar:
   open: false
 weight: 2
-Next: /docs/examples/03-blink-led/
+next: /docs/icetudio-examples/03-blink-led/
 ---
 
 <br>

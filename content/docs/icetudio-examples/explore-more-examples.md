@@ -1,6 +1,7 @@
 ---
 title: Explore more examples
 weight: 4
+next: docs/getting-started-with-verilog/
 ---
 
 iCE Studio comes with several built-in examples that help you learn FPGA concepts through hands-on experimentation.

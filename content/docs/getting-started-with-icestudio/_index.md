@@ -4,6 +4,7 @@ type: docs
 sidebar:
   open: true
 weight: 2
+next: /docs/getting-started-with-icestudio/what-is-icestudio/
 ---
 
 This section guides you through setting up and running your first projects on the Soan Papdi using iCE Studio.

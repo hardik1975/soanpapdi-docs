@@ -4,7 +4,7 @@ type: docs
 sidebar:
   open: false
 weight: 3
-Next: /docs/examples/explore-more-examples/
+next: /docs/icetudio-examples/explore-more-examples/
 ---
 
   <video

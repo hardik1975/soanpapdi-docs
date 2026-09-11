@@ -1,6 +1,7 @@
 ---
 title: Installing Apio CLI
 weight: 2
+# next: /docs/verilog-example/servo-sweep/
 next: /docs/verilog-example/servo-sweep/
 ---
 
