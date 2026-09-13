@@ -31,7 +31,7 @@ menu:
     #   url: "https://www.ashoktinkeringlabs.com/about"
     #   # pageRef: /about
     #   weight: 3
-    - name: Contact ↗
+    - name: Contact Us ↗
       url: "https://www.ashoktinkeringlabs.com/contact"
       weight: 4
     - name: Search
