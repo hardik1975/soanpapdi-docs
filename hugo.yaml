@@ -27,13 +27,13 @@ menu:
     - name: Downloads
       pageRef: /downloads
       weight: 2
-    - name: About Us ↗
-      url: "https://www.ashoktinkeringlabs.com/about"
-      # pageRef: /about
-      weight: 3
-    # - name: Contact ↗
-    #   url: "https://www.ashoktinkeringlabs.com/contact"
-    #   weight: 4
+    # - name: About Us ↗
+    #   url: "https://www.ashoktinkeringlabs.com/about"
+    #   # pageRef: /about
+    #   weight: 3
+    - name: Contact ↗
+      url: "https://www.ashoktinkeringlabs.com/contact"
+      weight: 4
     - name: Search
       weight: 5
       params:
