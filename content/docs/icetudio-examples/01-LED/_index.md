@@ -136,7 +136,7 @@ In this project, we are going to create a very simple circuit. We will connect a
     playsinline
     width="100%"
     style="border-radius: 12px; overflow: hidden;">
-    <source src="/videos/soan-papdi-programming video.mp4" type="video/mp4">
+    <source src="/videos/soan-papdi-programming-video.mp4" type="video/mp4">
   </video>
 
   > [!NOTE]
