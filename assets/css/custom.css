@@ -48,3 +48,47 @@
 
 
 /* Spec Card Styles */
+
+/* Hero Board Image Showcase (optimized for web & mobile) */
+.board-showcase {
+  background: linear-gradient(145deg, #ffffff 0%, #f3f4f6 100%);
+  border-radius: 16px;
+  padding: clamp(1.25rem, 4vw, 2.5rem);
+  margin: 1.5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.board-showcase p {
+  margin: 0 !important;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.board-showcase img {
+  display: block;
+  width: 100%;
+  max-width: 520px;
+  height: auto;
+  margin: 0 !important;
+  border-radius: 8px;
+  filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.15));
+}
+
+@media (max-width: 640px) {
+  .board-showcase {
+    border-radius: 12px;
+    padding: 1rem;
+    margin: 1rem 0;
+  }
+
+  .board-showcase img {
+    max-width: 100%;
+  }
+}

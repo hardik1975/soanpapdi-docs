@@ -1,6 +1,6 @@
 ---
 title: Documentation
-next: hardware-overview
+next: /docs/hardware-overview
 weight: 1
 ---
 

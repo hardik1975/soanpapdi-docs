@@ -21,12 +21,28 @@ menu:
     - name: Crowd Supply
       url: "https://www.crowdsupply.com/ashoktinkeringlabs/soan-papdi"
       weight: 1
+      params:
+        hideOnMini: true
     - name: Docs
       pageRef: /docs
       weight: 1
+      params:
+        hideOnMini: true
+    # - name: Soan Papdi Mini
+    #   pageRef: /mini
+    #   weight: 2
     - name: Downloads
+      identifier: downloads
       pageRef: /downloads
-      weight: 2
+      weight: 3
+      params:
+        hideOnMini: true
+    - name: Downloads
+      identifier: mini-downloads
+      pageRef: /mini/downloads
+      weight: 3
+      params:
+        onlyOnMini: true
     # - name: About Us ↗
     #   url: "https://www.ashoktinkeringlabs.com/about"
     #   # pageRef: /about

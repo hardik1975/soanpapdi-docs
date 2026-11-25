@@ -43,6 +43,7 @@ toc: false
     shadow-softness="1"
     environment-image="neutral"
     exposure="1.1"
+    loading="lazy"
     style="width: 100%; max-width: 800px; height: 450px; border-radius: 16px; background-color: var(--hextra-colors-background-secondary, #111827); box-shadow: 0 20px 40px -10px rgba(0,0,0,0.5); border: 1px solid var(--hextra-colors-border, #374151); overflow: hidden;">
   </model-viewer>
 </div>
