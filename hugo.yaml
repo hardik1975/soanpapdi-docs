@@ -28,6 +28,12 @@ menu:
       weight: 1
       params:
         hideOnMini: true
+    - name: Docs
+      identifier: mini-docs
+      pageRef: /mini
+      weight: 1
+      params:
+        onlyOnMini: true
     # - name: Soan Papdi Mini
     #   pageRef: /mini
     #   weight: 2
