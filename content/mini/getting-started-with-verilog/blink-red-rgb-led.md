@@ -6,7 +6,19 @@ prev: /mini/getting-started-with-verilog/installing-apio/
 next: /mini/troubleshoot/
 ---
 
-![Soan Papdi Mini Red RGB LED](/mini/getting-started-with-icestudio/images/rgb-led/red-led-1.jpg)
+<br>
+
+<video
+  controls
+  autoplay
+  muted
+  loop
+  playsinline
+  width="100%"
+  style="border-radius: 12px; overflow: hidden;">
+  <source src="/videos/mini/blink-red-led.mp4" type="video/mp4">
+</video>
+
 
 In this tutorial, you'll build, synthesize, and upload a complete **Verilog** hardware design on the **Soan Papdi Mini** using the **Apio CLI** to blink the **Red channel** of the onboard RGB LED.
 
@@ -25,11 +37,11 @@ Because the **Soan Papdi Mini** includes an onboard **RGB LED** and a **12 MHz c
 | Signal in Verilog | Hardware Component | Physical FPGA Pin | Notes |
 | :--- | :--- | :--- | :--- |
 | **`clk`** | Onboard 12 MHz Oscillator | **Pin 35** | Ticks 12,000,000 times per second |
-| **`led_r`** | Onboard RGB LED (**Red** / `RGB1`) | **Pin 40** | **Active-Low** (`0` = LED ON, `1` = LED OFF) |
+| **`led_r`** | Onboard RGB LED (**Red** / RGB1) | **Pin 40** | **Active-Low** |
 
 {{< callout type="info" >}}
 **Active-Low RGB LED:** \
-The onboard RGB LED on the Soan Papdi Mini is **Active-Low**. Driving the pin to logic **`0`** (`LOW`) turns the LED **ON**, and driving it to logic **`1`** (`HIGH`) turns the LED **OFF**.
+The onboard RGB LED on the Soan Papdi Mini is **Active-Low**. Driving the pin to logic **`0`** (LOW) turns the LED **ON**, and driving it to logic **`1`** (HIGH) turns the LED **OFF**.
 *(Want to check other pins? View the full [Soan Papdi Mini Pin Diagram](/mini/hardware-overview/#pin-diagram)).*
 {{< /callout >}}
 
@@ -83,8 +95,8 @@ board = soan-papdi
 top-module = blink
 ```
 
-- **`board = soan-papdi`**: Configures the synthesis and DFU programmer tools for the Soan Papdi / Soan Papdi Mini (`iCE40UP5K-SG48`).
-- **`top-module = blink`**: Specifies the entry-point module name inside `blink.v`.
+- **`board = soan-papdi`** : Configures the synthesis and DFU programmer tools for the Soan Papdi Mini.
+- **`top-module = blink`** : Specifies the entry-point module name inside `blink.v`.
 
 #### 2. `pins.pcf` {class="no-step-marker"}
 
@@ -98,10 +110,10 @@ set_io clk 35
 set_io led_r 40
 ```
 
-- **`set_io clk 35`**: Connects `clk` to **Pin 35** (the onboard 12 MHz crystal oscillator).
-- **`set_io led_r 40`**: Connects `led_r` to **Pin 40** (the **Red** channel of the onboard RGB LED).
+- **`set_io clk 35`** : Connects `clk` to **Pin 35** (the onboard 12 MHz crystal oscillator).
+- **`set_io led_r 40`** : Connects `led_r` to **Pin 40** (the **Red** channel of the onboard RGB LED).
 
-#### 3. `blink.v` (Complete Verilog Source Code) {class="no-step-marker"}
+#### 3. `blink.v` {class="no-step-marker"}
 
 This is your hardware description file. It divides the high-speed 12 MHz clock down to toggle the Red RGB LED every **0.5 seconds** (a 1 Hz blink rate):
 
@@ -150,7 +162,7 @@ module blink (
 ```
 
 - **`input wire clk`**: Receives the continuous 12 MHz clock signal from Pin 35.
-- **`output reg led_r = 1'b1`**: Declared as a `reg` (register) because it holds its state (`0` or `1`) between clock cycles inside an `always` block. Initializing it to `1'b1` starts the active-low Red LED in the **OFF** state.
+- **`output reg led_r = 1'b1`**: Declared as a "reg" (register) because it holds its state ("0" or "1") between clock cycles inside an `always` block. Initializing it to `1'b1` starts the active-low Red LED in the **OFF** state.
 
 #### 2. Time-to-Clock Math {class="no-step-marker"}
 
@@ -159,9 +171,9 @@ localparam HALF_SECOND = 6_000_000;
 ```
 
 If we toggled the LED directly on every 12 MHz clock tick, it would flash millions of times per second—far too fast for the human eye to see. To make it toggle every **0.5 seconds**:
-- **Clock Frequency**: `12,000,000 Hz` (12 million ticks per second)
-- **0.5 Second Ticks**: `12,000,000 × 0.5 s = 6,000,000 clock cycles`
-- **Full Blink Period**: `0.5 s ON + 0.5 s OFF = 1.0 second` (`1 Hz`)
+- **Clock Frequency**: 12,000,000 Hz (12 million ticks per second)
+- **0.5 Second Ticks**: 12,000,000 × 0.5 s = 6,000,000 clock cycles
+- **Full Blink Period**: 0.5 s ON + 0.5 s OFF = 1.0 second (1 Hz)
 
 #### 3. Register Bit Sizing {class="no-step-marker"}
 
@@ -169,7 +181,7 @@ If we toggled the LED directly on every 12 MHz clock tick, it would flash millio
 reg [22:0] counter = 23'd0;
 ```
 
-In hardware, every bit of a register is a physical flip-flop on the FPGA. To count up to `6,000,000`, we need a 23-bit register (`[22:0]`), since `2²³ = 8,388,608` (whereas 22 bits only reaches `4,194,304`).
+In hardware, every bit of a register is a physical flip-flop on the FPGA. To count up to 6,000,000, we need a 23-bit register ([22:0]), since 2²³ = 8,388,608 (whereas 22 bits only reaches 4,194,304).
 
 #### 4. Synchronous Counter & LED Toggle {class="no-step-marker"}
 
@@ -185,7 +197,7 @@ end
 ```
 
 - **`always @(posedge clk)`**: Triggers on every rising edge of the 12 MHz clock.
-- **Counting & Toggling**: On each clock tick, `counter` increments by `1`. Once it reaches `5,999,999` (6 million ticks total, starting from `0`), it resets back to `0` and inverts `led_r` (`~led_r`), flipping the Red LED between **ON** (`0`) and **OFF** (`1`).
+- **Counting & Toggling**: On each clock tick, counter increments by 1. Once it reaches 5,999,999 (6 million ticks total, starting from 0), it resets back to 0 and inverts led_r, flipping the Red LED between **ON** (0) and **OFF** (1).
 
 ### Build & Upload to Soan Papdi Mini
 
@@ -246,21 +258,32 @@ apio upload
 
 Once the upload finishes, **press the RESET button** on your **Soan Papdi Mini**. The onboard **Red RGB LED** will immediately start blinking on and off every half second!
 
+<video
+  controls
+  autoplay
+  muted
+  loop
+  playsinline
+  width="100%"
+  style="border-radius: 12px; overflow: hidden;">
+  <source src="/videos/mini/blink-red-led.mp4" type="video/mp4">
+</video>
+
 {{% /steps %}}
 
 <!-------------------------------------------------------------------------->
 
 <br>
 
-## Try Customizing It!
+## Try Customizing It
 
 Want to experiment with your Verilog hardware design? Try these quick changes and run `apio upload` again:
 
 - **Change the Blink Speed**: Change `localparam HALF_SECOND = 6_000_000;` in `blink.v` to `1_500_000` to make the Red LED blink **4× faster**.
 - **Switch RGB Colors**: Edit `pins.pcf` to map the output to a different channel of the onboard RGB LED:
-  - **Red (`R`)**: `set_io led_r 40`
-  - **Green (`G`)**: `set_io led_r 41`
-  - **Blue (`B`)**: `set_io led_r 39`
+  - **Red (R)**: set_io led_r 40
+  - **Green (G)**: set_io led_r 41
+  - **Blue (B)**: set_io led_r 39
 
 <br>
 
