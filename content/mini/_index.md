@@ -6,7 +6,7 @@ cascade:
   type: docs
 ---
 
-Welcome to the official **Soan Papdi Mini** documentation — a compact, breadboard-friendly **Lattice iCE40UP5K** FPGA development board built for hands-on learning, rapid prototyping, and digital logic design with an open-source FPGA toolchain.
+Welcome to the official **Soan Papdi Mini** documentation — a compact, breadboard-friendly FPGA development board built for hands-on learning, rapid prototyping, and digital logic design with an open-source FPGA toolchain.
 
 <div class="board-showcase">
 
@@ -16,7 +16,7 @@ Welcome to the official **Soan Papdi Mini** documentation — a compact, breadbo
 
 {{< callout emoji="⚡" >}}
 **Compact size, full FPGA power:** \
-Powered by the **Lattice iCE40UP5K** (`5,280 LUTs`), **27 breadboard-friendly GPIO pins**, an onboard **RGB LED**, **12 MHz oscillator**, and a **USB-C DFU bootloader**—programmable in seconds with 100% open-source tools on Windows, macOS, and Linux.
+Powered by the **Lattice iCE40UP5K**, **27 breadboard-friendly GPIO pins**, an onboard **RGB LED**, **12 MHz oscillator**, and a **USB-C DFU bootloader**—programmable in seconds with 100% open-source tools on Windows, macOS, and Linux.
 {{< /callout >}}
 
 <div class="cta-row" style="display: flex; gap: 12px; flex-wrap: wrap; margin-top: 1.25rem; margin-bottom: 0.5rem;">
@@ -60,7 +60,7 @@ Ideal for beginners and visual learners. Wire up logic gates, counters, and cloc
 
 ### 2. Hardware Description Code — Verilog & Apio CLI
 
-Ready to work closer to the silicon? Write synthesizable **Verilog** code and use the open-source **Apio CLI** (`Yosys` + `nextpnr`) to verify, build, and upload from your terminal.
+Ready to work closer to the silicon? Write synthesizable **Verilog** code and use the open-source **Apio CLI** (Yosys + nextpnr) to verify, build, and upload from your terminal.
 
 {{< cards cols="2" >}}
   {{< card link="/mini/getting-started-with-verilog/" title="Getting Started with Verilog" subtitle="Learn the open-source Apio CLI workflow and project structure." icon="terminal" >}}
