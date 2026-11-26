@@ -16,9 +16,11 @@ Call us at **+91 9026278822** or email us at [hardikseth1975@gmail.com](mailto:h
 
 <br>
 
-## 1. `"icestudio.app is damaged"` Error (macOS)
+## 1. "icestudio.app is damaged" Error (macOS)
 
-If you are on a Mac and see an alert saying **`"icestudio.app" is damaged and can't be opened`**:
+If you are on a Mac and see an alert saying:
+
+ **`"icestudio.app" is damaged and can't be opened`**
 
 ![iCE Studio macOS error](/docs/images/Getting%20Started%20Doc/icestudio-is-damaged-cant-open.png)
 
@@ -51,8 +53,8 @@ If your upload fails in iCE Studio or `apio upload` reports `Error: No matching 
 Before uploading any new design to the FPGA, you must put the **Soan Papdi Mini** into **Programming Mode** so its DFU bootloader listens for a new bitstream.
 
 {{< callout type="warning" >}}
-**#1 Cause of Upload Failures:** \
-Always make sure the onboard **RGB LED is blinking white** before clicking **Upload** in iCE Studio or running `apio upload`!
+**Cause of Upload Failures:** \
+Always make sure the onboard **RGB LED is blinking white** before clicking **Upload** in iCE Studio or running `apio upload` .
 {{< /callout >}}
 
 ### How to Enter Programming Mode on Soan Papdi Mini
@@ -88,29 +90,50 @@ The onboard **White RGB LED** will begin blinking. Your **Soan Papdi Mini** is n
   </video>
 
   <p style="margin-top: 10px; font-size: 0.85rem; opacity: 0.65;">
-    Soan Papdi Mini entering Programming Mode — watch for the Blue LED followed by the blinking White RGB LED.
+    Soan Papdi Mini in Programming Mode.
   </p>
 </div>
 
-Once the **White RGB LED** is blinking, click **Upload** in iCE Studio (or run `apio upload`). When the upload finishes, press the **RESET** button once to exit Programming Mode and run your new circuit!
+Once the **White RGB LED** is blinking, click **Upload** in iCE Studio (or run `apio upload` in your terminal).
+
+{{< callout type="warning" >}}
+**Don't Forget: Press the `RESET` Button After Uploading** \
+After the upload finishes, your board stays in Programming Mode and won't run your project yet. **Press the RESET button once** on the board to exit Programming Mode and start running the code you just uploaded.
+{{< /callout >}}
 
 <!-------------------------------------------------------------------------->
 
 <br>
 
-## 3. Board Still Not Detected Over USB?
+## 3. Board Still Not Connecting to Your Computer?
 
-If your **Soan Papdi Mini** is blinking white in Programming Mode but your computer still doesn't detect it:
+If the **White RGB LED is blinking** (Programming Mode is active), but your project still won't upload, check these two things:
 
-1. **Check Your USB-C Cable (Data vs. Charge-Only)**:
-   Many USB-C cables included with power banks or headphones only carry power wires (`5V` and `GND`) and lack `D+`/`D-` data lines. Try a known **USB-C data cable** and verify detection by running:
-   ```bash
-   apio devices scan-usb
-   ```
-2. **Check `board` in `apio.ini` (Verilog / Apio CLI Users)**:
-   If `apio devices scan-usb` shows `Soan Papdi FPGA (DFU)` and `apio upload` fails with `FILTER [VID=1D50, PID=6146, REGEX="^Soan Papdi Mini.*"]`, set `board = soan-papdi` in your project's `apio.ini`:
-   ```ini
-   [env:default]
-   board = soan-papdi
-   top-module = blink
-   ```
+### Check 1: Use a Data USB-C Cable (Not a Charge-Only Cable)
+
+Not all USB-C cables can transfer data! Many cheap cables included with power banks, wireless earbuds, or desk lamps are **charging-only**—they will light up the board, but your computer won't see the board at all.
+
+**The Fix:**
+- Switch to a **USB-C cable that supports data transfer** (such as a smartphone data cable).
+- Try plugging the cable directly into a different USB port on your computer.
+
+---
+
+### Check 2: "No matching USB device" Error in Apio CLI (Verilog Users)
+
+If you are uploading Verilog code from the terminal using `apio upload` and see this error:
+
+```text
+Error: No matching USB device.
+```
+
+**The Fix:** \
+Open the `apio.ini` file in your project folder and make sure the board name is set to **`soan-papdi`**:
+
+```ini
+[env:default]
+board = soan-papdi
+top-module = blink
+```
+
+Save the file and run `apio upload` again—your code will upload right away!
